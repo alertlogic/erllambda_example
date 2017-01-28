@@ -1,0 +1,11 @@
+{application, erllambda_example,
+ [{description, "Example erllambda Function"},
+  {vsn, "git"},
+  {registered, []},
+  {applications, [kernel, stdlib, erllambda]},
+  {env,[]},
+  {modules, []},
+  {contributors, []},
+  {licenses, []},
+  {links, []}
+ ]}.

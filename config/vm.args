@@ -1,0 +1,7 @@
+-sname erllambda_example@localhost
+
+-setcookie erllambda_example_cookie
+
+-smp
++K true
++W w
