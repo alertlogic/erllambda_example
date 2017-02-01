@@ -13,5 +13,9 @@ for comp in dev_scripts makeincl; do
     fi
 done
 
+setup=_build/dev_scripts/setup.sh
+if [[ -e _checkouts/dev_scripts/setup.sh ]]; then
+    setup=_checkouts/dev_scripts/setup.sh
+fi
 SCRIPT_DIR="${SCRIPT_DIR}" COMPS_NEEDED="${COMPS_NEEDED}" \
-_build/dev_scripts/setup.sh "$@"
+${setup} "$@"
