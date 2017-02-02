@@ -80,8 +80,9 @@
         },
         "Handler": "index.handler",
         "Role": {"Fn::GetAtt": ["Role", "Arn"]},
-        "Timeout": 15,
-        "Runtime": "nodejs4.3"
+        "Runtime": "nodejs4.3",
+        "MemorySize": 512,
+        "Timeout": 15
       }
     },
 
