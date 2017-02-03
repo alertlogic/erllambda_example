@@ -1,7 +1,7 @@
--sname erllambda_example@localhost
-
 -setcookie erllambda_example_cookie
 
+-connect_all false
+-start_epmd false
 -smp
 +K true
 +W w

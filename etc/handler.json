@@ -1,4 +1,4 @@
 {
-    "command": "bin/erllambda_example",
+    "command": "bin/erllambda",
     "module": "erllambda_example"
 }

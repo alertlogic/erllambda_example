@@ -2,7 +2,9 @@ APP := erllambda_example
 
 ERLANG_VERSION ?= r19_2
 COMP_NEEDED := erlang_$(ERLANG_VERSION),rebar3,setenv
+CFN_STACK_NAME := erllambda-example
 CFN_CAPABILITIES := CAPABILITY_NAMED_IAM
+IMAGE := 948063967832.dkr.ecr.us-west-2.amazonaws.com/makeincl
 
 all: unit
 

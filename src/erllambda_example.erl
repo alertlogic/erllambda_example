@@ -10,4 +10,5 @@
 %% @doc Handle lambda invocation
 %%
 handle( _Event, _Context ) ->
+    erllambda:message( "Hello World!" ),
     ok.

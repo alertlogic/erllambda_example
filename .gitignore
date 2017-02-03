@@ -26,3 +26,4 @@ _checkouts
 log/
 compile_commands.json
 *.crashdump
+rebar.lock
