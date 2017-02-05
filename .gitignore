@@ -27,3 +27,6 @@ log/
 compile_commands.json
 *.crashdump
 rebar.lock
+*.dump
+node_modules
+*.log
