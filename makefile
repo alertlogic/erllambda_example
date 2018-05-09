@@ -1,6 +1,6 @@
 APP := erllambda_example
 
-ERLANG_VERSION ?= r19_3_6_1
+ERLANG_VERSION ?= 20.1.7
 COMP_NEEDED := erlang_$(ERLANG_VERSION),rebar3,setenv
 CFN_STACK_NAME := erllambda-example
 CFN_CAPABILITIES := CAPABILITY_NAMED_IAM
