@@ -16,18 +16,6 @@
       "Type": "String"
     }
   },
-  
-  "Conditions": {
-    "IsDev": {
-      "Fn::Not": [
-        {"Fn::Or": [
-          {"Fn::Equals": [{"Ref": "baseStackName"}, "global-services"]},
-          {"Fn::Equals": [{"Ref": "baseStackName"}, "global-integration"]}
-        ]}
-      ]
-    }
-  },
-  
 
   "Resources": {
     "Role": {
@@ -67,21 +55,15 @@
         "Description": "Ingestion subsystem export lambda function",
         "Code": {
           "S3Bucket": {"Ref": "artifactBucket"},
-          "S3Key": {
-            "Fn::If": [
-              "IsDev",
-              {"Fn::Join": ["", [{"Ref": "baseStackName"},
-                                 "/erllambda_example/erllambda_example-",
-                                 {"Ref": "version"}, ".zip"]]},
-              {"Fn::Join": ["", ["erllambda_example/erllambda_example-",
-                                 {"Ref": "version"}, ".zip"]]}
-            ]
+          "S3Key": {"Fn::Join": [
+            "", ["erllambda_example/erllambda_example-",
+            {"Ref": "version"}, ".zip"]],
           }
         },
         "Handler": "index.handler",
         "Role": {"Fn::GetAtt": ["Role", "Arn"]},
-        "Runtime": "nodejs4.3",
-        "MemorySize": 512,
+        "Runtime": "byol",
+        "MemorySize": 1024,
         "Timeout": 15
       }
     },
