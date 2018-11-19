@@ -17,42 +17,12 @@ Instructions to do this can be found in
 [Running this Project](#running-this-project).
 
 
-## Ownership
-
-The `erllambda_example` application owned by the
-[Data Processing Team](https://alertlogic.atlassian.net/wiki/display/DPT).
-
-
 ## Dependencies
 
 The `erllambda_example` application is built using
 [`rebar3`](http://www.rebar3.org), and all other dependencies are
 automatically pulled in when `erllambda_example` is used in other projects
 `rebar.config`.
-
-## How to contribute
-
-Contributions to this repo are always welcome.  If you have an idea for
-improving the this or related components, please submit a
-[github issue](https://github.com/alertlogic/erllambda_example/issues),
-or simply submit a PR directly that implements your improvement.
-
-For complex changes, or the introduction of a major feature, it is
-beneficial to discuss ideas before implementing them, so that your efforts
-can focus on pull requests that will be accepted more easily.
-
-As you prepare your pull request, make sure that you follow the coding
-conventions that exist in the files, and always make sure that all unit and
-common tests run.  Please ensure that your contribution always adds to the
-coverage percentage, and does not decrease it.
-
-
-## How to report defects
-
-If you encounter an problem, or simply have a question about using this
-repo, please submit a
-[github issue](https://github.com/alertlogic/erllambda_example/issues).
-
 
 ## Running this Project
 
@@ -79,8 +49,30 @@ likely have not setup the [aws cli](https://aws.amazon.com/cli/) and should
 do so immediately.
 
 Please see `etc/erllambda-example.template` to understand how the lambda
-function is deployed, and the `makefile` for how to further invoke your
-deployment.
+function is deployed
 
+
+## How to contribute
+
+Contributions to this repo are always welcome.  If you have an idea for
+improving the this or related components, please submit a
+[github issue](https://github.com/alertlogic/erllambda_example/issues),
+or simply submit a PR directly that implements your improvement.
+
+For complex changes, or the introduction of a major feature, it is
+beneficial to discuss ideas before implementing them, so that your efforts
+can focus on pull requests that will be accepted more easily.
+
+As you prepare your pull request, make sure that you follow the coding
+conventions that exist in the files, and always make sure that all unit and
+common tests run.  Please ensure that your contribution always adds to the
+coverage percentage, and does not decrease it.
+
+
+## How to report defects
+
+If you encounter an problem, or simply have a question about using this
+repo, please submit a
+[github issue](https://github.com/alertlogic/erllambda_example/issues).
 
 <!--- vim: sw=4 et ts=4 -->

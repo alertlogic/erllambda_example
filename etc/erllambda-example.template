@@ -1,6 +1,6 @@
 {
   "AWSTemplateFormatVersion": "2010-09-09",
-  "Description" : "Ingestion Subsystem Lambda function for processing input streams as an alternative to using the ingest api.",
+  "Description" : "Basic Lambda function in Erlang",
 
   "Parameters": {
     "baseStackName": {
