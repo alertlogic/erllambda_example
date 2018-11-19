@@ -52,7 +52,7 @@
           "Fn::Join": ["-", [{"Ref": "AWS::Region"}, {"Ref": "baseStackName"},
                              "erllambda_example"]]
         },
-        "Description": "Ingestion subsystem export lambda function",
+        "Description": "Example lambda function",
         "Code": {
           "S3Bucket": {"Ref": "artifactBucket"},
           "S3Key": {"Fn::Join": [
@@ -62,7 +62,7 @@
         },
         "Handler": "index.handler",
         "Role": {"Fn::GetAtt": ["Role", "Arn"]},
-        "Runtime": "byol",
+        "Runtime": "provided",
         "MemorySize": 1024,
         "Timeout": 15
       }
