@@ -1,7 +1,7 @@
 -module(erllambda_example).
 -behavior(erllambda).
 
--export([handle/2]).
+-export([init/1, handle/2]).
 
 
 %%---------------------------------------------------------------------------
