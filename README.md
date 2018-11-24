@@ -19,10 +19,7 @@ Instructions to do this can be found in
 
 ## Dependencies
 
-The `erllambda_example` application is built using
-[`rebar3`](http://www.rebar3.org), and all other dependencies are
-automatically pulled in when `erllambda_example` is used in other projects
-`rebar.config`.
+The `erllambda_example` application is built using [`rebar3`](http://www.rebar3.org).
 
 ## Running this Project
 
@@ -31,13 +28,13 @@ Initially, just clone and build the project.
 ```
 git clone git@github.com:alertlogic/erllambda_example.git
 cd erllambda_example
-rebar3 compile ct
+rebar3 compile
 ```
 
 Once build and all tests successfully pass, you can package the lambda
 function and deploy it.
 
-Refer to [`erllambda`](https://github.com/alertlogic/erllambda/blob/master/README.md) for details.
+Refer to [`rebar3_erllambda`](https://github.com/alertlogic/rebar3_erllambda/blob/master/README.md#creating-a-package) for details.
 
 **NOTE:** this will use your *default* project located in your
 `$HOME/.aws/credentials` file.  If you have not yet create this file, you
