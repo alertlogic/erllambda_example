@@ -26,7 +26,7 @@ The `erllambda_example` application is built using [`rebar3`](http://www.rebar3.
 Initially, just clone and build the project.
 
 ```
-git clone git@github.com:alertlogic/erllambda_example.git
+git clone https://github.com/alertlogic/erllambda_example.git
 cd erllambda_example
 rebar3 compile
 ```
